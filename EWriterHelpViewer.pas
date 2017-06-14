@@ -1,5 +1,15 @@
 unit EWriterHelpViewer;
 
+{
+  very simple and basic implementation of support EWriter help files
+  © 2017 ZeeBORN GmbH
+
+  so far only display of help topics via ContextID does work
+  all other items are still //TODO
+
+  updated: 14.06.2017
+}
+
 interface
 
 uses
@@ -53,14 +63,13 @@ procedure TEWriterHelpViewer.DisplayHelpByContext(const ContextID: THelpContext;
 var
   Context: String;
 begin
-  // ShowMessage(HelpFileName);
   Context := IntToStr(ContextID);
   ShellExecute(0, nil, PChar(HelpFileName), PChar(Context), nil, SW_NORMAL);
 end;
 
 procedure TEWriterHelpViewer.DisplayTopic(const Topic: string);
 begin
-
+  // TODO
 end;
 
 function TEWriterHelpViewer.GetHelpStrings(const HelpString: String)
@@ -87,7 +96,7 @@ end;
 
 procedure TEWriterHelpViewer.ShowTableOfContents;
 begin
-
+  // TODO
 end;
 
 procedure TEWriterHelpViewer.ShutDown;
@@ -119,7 +128,6 @@ begin
 end;
 
 function TEWriterHelpSelector.SelectKeyword(Keywords: TStrings): Integer;
-
 begin
   Result := 1
 end;
