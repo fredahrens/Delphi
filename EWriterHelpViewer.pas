@@ -2,12 +2,12 @@ unit EWriterHelpViewer;
 
 {
   very simple and basic implementation of support EWriter help files
-  © 2017 ZeeBORN GmbH
+  Â© 2022 ZeeBORN GmbH
 
   so far only display of help topics via ContextID does work
   all other items are still //TODO
 
-  updated: 14.06.2017
+  updated: 09.11.2022
 }
 
 interface
