@@ -10,7 +10,7 @@ It's a very basic implementation of EWriter (created by Help & Manual) support f
 Just compile your help project with Help & Manual into an exe file in EWriter format and assign the exe's file name to the HelpFile property of your application or forms.
 The current implementation only supports showing help content via a context ID. So, assigning a value to the HelpContext property of a control or form and pressing F1 at runtime will bring up the related page in the EWriter ebook.
 
-## RetypeHelpViewer.pas
+## ReTypeHelpViewer.pas
 
 ![WARNING]
 So far this is a first step based on EWriterHelpViewer.pas that will be transformed into a working library.
